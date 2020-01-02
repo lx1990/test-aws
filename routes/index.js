@@ -6,7 +6,7 @@ const moment = require('moment');
 router.get('/', async (ctx, next) => {
   const now = moment().format();
   await ctx.render('index', {
-    title: `Hello Koa 2! 
+    title: `test! 
     now time is ${now}`
   })
 })
