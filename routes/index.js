@@ -4,7 +4,7 @@ const moment = require('moment');
 
 
 router.get('/', async (ctx, next) => {
-  const now = moment().format();
+  const now = moment().format('YYYY-MM-DDTHH:mm:ss.SSSZ');
   await ctx.render('index', {
     title: `test! test! test! 
     now time is ${now}`
